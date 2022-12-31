@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fruit Ninja</title>
+    <link>https://ESE5190TeamTaco.github.io/</link>
+    <description>Recent content on Fruit Ninja</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ESE5190TeamTaco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Project Showcase</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-01/</guid>
+      <description>Fruit Ninja control using laser pointer: In our project we aimed to use a laser pointer on any surface to control an object/character’s movement in any game. This project was built with the intent to further develop controllers for people who can’t hold/use regular game controllers.
+We used the camera module on pico4ML and RP2040 microcontroller to track the brightest point (laser pointer) and move a knife object in a Fruit Ninja like game.</description>
+    </item>
+    
+    <item>
+      <title>2. Project Instructions</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-02/</guid>
+      <description>For the whole project, we first use the camera to track the motion(the brightest point). We will have cardboard as a dark background so that we can hold a laser pen and control it, so the brightest point would be where the laser pen points. The C code we use can transfer the data from the camera to the LCD screen. Then we will transfer the brightest point location to another PC using python and initiate the game also by the python.</description>
+    </item>
+    
+    <item>
+      <title>3. Project Development</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-03/</guid>
+      <description>Proposal To use a laser pointer on a dark screen/surface to control the movement of a game character using the Arducam camera on pico4ML to track the laser pointer. We proposed ‘snake’ game to control the movement of the snake but by the final project demo day we ended up changing it to a ‘fruit ninja’ like game.
+Demo Created a setup with pico4ML fixed facing a cardboard screen. Created the ‘fruit ninja’ game in python using pygame module.</description>
+    </item>
+    
+    <item>
+      <title>4. Issues and Solutions</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-04/</guid>
+      <description>First issue We implemented brightest point tracking inside a loop so it would continuously track the brightest point. This created a problem because even when the laser pointer was not turned on the camera module and RP2040 would track the brightest point in that frame and move the knife according to that even when the user wasn’t using the laser to control the knife.
+Our solution was to set a threshold number for brightness tracking.</description>
+    </item>
+    
+    <item>
+      <title>5. Project Reflections</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-05/</guid>
+      <description>For our design we made a cardboard screen to point the laser pointer at to control the movement of the knife in the fruit ninja game. We fixed the pico4ML (and the camera module) at a fixed distance from the cardboard screen. The game display was on the laptop connected through a cable to the pico4ML. The advantage for this setup was that it was cheap (super glued cardboard to make the setup).</description>
+    </item>
+    
+    <item>
+      <title>6. Project Accomplishment</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-06/</guid>
+      <description>We found the real time response of the laser pointer to control the knife in the game very satisfying. Also the accuracy of the brightest point tracking was satisfying. We averaged 4 pixels together to calculate the brightest point so that it was accurate.</description>
+    </item>
+    
+    <item>
+      <title>7. PIO</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-07/</guid>
+      <description>In our code, we used the PIO part for the image transfer from camera to the processor. On the RP2040, each PIO instance includes four state machines that can each run instructions stored in shared instruction memory. This memory can hold 32 instructions, and each state machine can utilize any of said instructions. Each state machine can also control any of the GPIO pins on the Pico. From our code, we have the code to initialize the PIO:</description>
+    </item>
+    
+    <item>
+      <title>8. Team overview</title>
+      <link>https://ESE5190TeamTaco.github.io/project/project-08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ESE5190TeamTaco.github.io/project/project-08/</guid>
+      <description>Maxi Liu Github: https://github.com/Maxi0427
+Linkedin: https://www.linkedin.com/in/maxi-liu-104a45257/
+Navit Gill Preferred name - Nav
+Github: https://github.com/navgill4
+Bio - Majoring in Master’s Electrical Engineering at University of Pennsylvania, Philadelphia, PA
+Bachelor’s in Electrical and Electronics Engineering Technology from Rochester Institute of Technology, Rochester, NY
+Yuan Chi Github: https://github.com/chiyuan9
+Linkedin: https://www.linkedin.com/in/yuan-chi-256596255/</description>
+    </item>
+    
+    
+  </channel>
+</rss>
